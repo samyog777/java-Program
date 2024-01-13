@@ -14,6 +14,6 @@ public class Enhance_for_loop {
 	//Enhance for loop
 	for(int i:array) {
 		System.out.print(i);
-	}
+		}
 	}
 }
