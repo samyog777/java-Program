@@ -12,4 +12,10 @@
 //}
 
 // indication of array is wrong we have to use {} bracket and many things 
+<<<<<<< HEAD
 // basically this is not a code that can be solved and i don't even know what the coder is trying to do here.
+=======
+// basically this is not a code that can be solved and i don't even know what the coder is trying to do here.
+package Exams;
+
+>>>>>>> e80afee (java)
