@@ -1,0 +1,14 @@
+package All_java_program;
+
+import java.util.*;
+
+public class Hash_map {
+
+	public static void main(String[] args) {
+		HashMap <Integer,String> hm = new HashMap<> ();
+		hm.put(1,  "Samyog");
+		hm.put(3, "Avi");
+		hm.put(3, "Suren");
+		hm.put(4, "Vex");
+	}
+}

@@ -1,0 +1,13 @@
+package All_java_program;
+
+import java.util.*;
+
+public class Hash_map {
+
+	public static void main(String[] args) {
+		HashMap <Integer> hm = new HashMap<> ();
+		hm.add(23);
+		hm.
+	}
+
+}
