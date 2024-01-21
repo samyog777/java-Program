@@ -1,4 +1,4 @@
-package All_java_program;
+package Exams;
 
 public class first {
 

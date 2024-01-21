@@ -21,5 +21,3 @@ class wow {
 		return number%2 == 1;
 	}
 }
-
-

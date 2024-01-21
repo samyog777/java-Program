@@ -1,0 +1,27 @@
+package All_java_program;
+
+import java.util.*;
+
+public class Hash_map {
+
+	public static void main(String[] args) {
+		HashMap <Integer,String> hm = new HashMap<> ();
+		hm.put(1,  "Samyog");
+		hm.put(2, "Avi");
+		hm.put(3, "Suren");
+		hm.put(4, "Vex");
+		
+		System.out.println(hm);
+		for(int key: hm.keySet()) {
+			System.out.println(key);
+		}
+//		for(String value: hm.values()) {
+//			System.out.println(value);
+//		}
+//		for(Map.Entry <Integer, String> e: hm.entrySet()) {
+////			System.out.println(e);
+////			System.out.println(e.getKey());
+////			System.out.println(e.getValue());
+//		}
+	}
+}

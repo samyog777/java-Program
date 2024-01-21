@@ -1,3 +1,4 @@
+package Exams;
 
 import java.util.Scanner;
 
