@@ -21,8 +21,10 @@ import javax.swing.JTextPane;
 import java.awt.Font;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.SystemColor;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class login_pag extends JFrame {
+public class Sign_up extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -43,7 +45,7 @@ public class login_pag extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					login_pag frame = new login_pag();
+					Sign_up frame = new Sign_up();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -55,7 +57,7 @@ public class login_pag extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public login_pag() {
+	public Sign_up() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 524);
 		contentPane = new JPanel();
@@ -75,27 +77,27 @@ public class login_pag extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		textField = new JTextField();
-		textField.setBounds(174, 73, 228, 26);
+		textField.setBounds(162, 73, 228, 26);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(174, 35, 206, 26);
+		textField_1.setBounds(160, 35, 206, 26);
 		contentPane.add(textField_1);
 		
 		pwdPassword = new JPasswordField();
-		pwdPassword.setBounds(174, 146, 218, 21);
+		pwdPassword.setBounds(162, 177, 218, 21);
 		contentPane.add(pwdPassword);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Gender");
-		lblNewLabel_1_1.setBounds(42, 196, 60, 17);
+		lblNewLabel_1_1.setBounds(42, 116, 60, 17);
 		contentPane.add(lblNewLabel_1_1);
 		
 		JSlider slider = new JSlider();
-		slider.setToolTipText("Age");
+		slider.setToolTipText("");
 		slider.setPaintLabels(true);
-		slider.setBounds(108, 252, 200, 16);
+		slider.setBounds(166, 148, 200, 17);
 		contentPane.add(slider);
 		
 		JList list = new JList();
@@ -103,25 +105,31 @@ public class login_pag extends JFrame {
 		contentPane.add(list);
 		
 		lblNewLabel_2 = new JLabel("Age");
-		lblNewLabel_2.setBounds(42, 251, 60, 17);
+		lblNewLabel_2.setBounds(42, 148, 60, 17);
 		contentPane.add(lblNewLabel_2);
 		
 		btnLogin = new JButton("sign up");
-		btnLogin.setBounds(174, 299, 92, 26);
+		btnLogin.setBounds(141, 262, 114, 34);
 		contentPane.add(btnLogin);
 		
 		comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Rather not say", "Male", "Female"}));
 		comboBox.setSelectedIndex(0);
 		comboBox.setFont(new Font("Dialog", Font.BOLD, 12));
-		comboBox.setBounds(112, 191, 114, 26);
+		comboBox.setBounds(162, 111, 114, 26);
 		contentPane.add(comboBox);
 		
 		lblNewLabel_1_2 = new JLabel("Conform Password");
-		lblNewLabel_1_2.setBounds(42, 148, 128, 17);
+		lblNewLabel_1_2.setBounds(33, 215, 128, 17);
 		contentPane.add(lblNewLabel_1_2);
 		
 		btnLogin_1 = new JButton("login");
+		btnLogin_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Log_in log = new Log_in();
+				log.setVisible(true);
+			}
+		});
 		btnLogin_1.setBounds(291, 367, 114, 34);
 		contentPane.add(btnLogin_1);
 		
@@ -131,11 +139,11 @@ public class login_pag extends JFrame {
 		contentPane.add(lblDontHaveA);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(174, 111, 218, 21);
+		passwordField.setBounds(162, 213, 218, 21);
 		contentPane.add(passwordField);
 		
 		JLabel lblNewLabel_1_2_1 = new JLabel("Password");
-		lblNewLabel_1_2_1.setBounds(42, 119, 60, 17);
+		lblNewLabel_1_2_1.setBounds(42, 177, 92, 26);
 		contentPane.add(lblNewLabel_1_2_1);
 	}
 }
